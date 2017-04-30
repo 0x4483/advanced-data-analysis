@@ -1,5 +1,7 @@
 ## Welcome to GitHub Pages
 
+![](http://www.HostMath.com/Show.aspx?Code=%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
+
 You can use the [editor on GitHub](https://github.com/0x4483/advanced-data-analysis/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 $$a^2 + b^2 = c^2$$
 
