@@ -15,7 +15,7 @@ A: Data smoothing is the process of removing random noise so that the underlying
 
 ```
 
-![](img/1.png =50x50)
+![](/img/1.png)
 
 
 
