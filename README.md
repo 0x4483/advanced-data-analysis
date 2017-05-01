@@ -3,7 +3,7 @@
 Notice: this note is based on Cosma Shalizi's lecture [36-402 Advanced Data Analysis](https://www.stat.cmu.edu/~cshalizi/uADA/17/) and all credits should go to [Professor Shalizi](https://en.wikipedia.org/wiki/Cosma_Shalizi). In addition, some of the quoted sentences and images are taken from his publication [Advanced Data Analysis from an Elementary Point of View](https://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf)
 
 1. [Linear Regression](#linear-regression)
-2. [
+2. [Cross Validation)(#cross-validation)
 
 ### [Linear Regression](https://www.stat.cmu.edu/~cshalizi/uADA/17/hw/01/hw-01.pdf)
 
@@ -17,7 +17,34 @@ Q: What is data smoothing?
 A: Data smoothing is the process of removing random noise so that the underlying pattern can stand out. Sometimes the model we build might be overfitting the data - meaning we are just connecting dots rather than fathoming the underlying pattern. 
 ```
 
-2. 
+###  [Cross Validation](https://www.stat.cmu.edu/~cshalizi/uADA/17/hw/02/hw-02.pdf)
+
+Rather than titling it as evaluating statistical model, I am using cross validation because it is the mean technique or term we focus on in this section. However, the intent or reason of studying cross-validation is to test how well our predictions are. One thing to remember about the error is that we want the error to be small or small on average. In addtion, if we observe any systematic error, we should always be able to adjust it such that the error become even smaller. However, blindly seeking for minimizing mean squared error could overfit and often using high polynomial degree is one possible way of overfitting. Going back to our bias-variance tradeoff, although our bias decreases our variance increases and decreasing the predictive power of our model. Therefore, we use __cross validation__ to avoid over-fitting data. This can be achieve in the following way:
+
+```
+cv.lm <- function(data, formulae, nfolds = 5) {
+    data <- na.omit(data)
+    formulae <- sapply(formulae, as.formula)
+    n <- nrow(data)
+    fold.labels <- sample(rep(1:nfolds, length.out = n))
+    mses <- matrix(NA, nrow = nfolds, ncol = length(formulae))
+    colnames <- as.character(formulae)
+    for (fold in 1:nfolds) {
+        test.rows <- which(fold.labels == fold)
+        train <- data[-test.rows, ]
+        test <- data[test.rows, ]
+        for (form in 1:length(formulae)) {
+            current.model <- lm(formula = formulae[[form]], data = train)
+            predictions <- predict(current.model, newdata = test)
+            test.responses <- eval(formulae[[form]][[2]], envir = test)
+            test.errors <- test.responses - predictions
+            mses[fold, form] <- mean(test.errors^2)
+        }
+}
+    return(colMeans(mses))
+}
+
+```
 
 
 
