@@ -14,7 +14,7 @@ Q: What is data smoothing?
 A: Data smoothing is the process of removing random noise so that the underlying pattern can stand out. Sometimes the model we build might be overfitting the data - meaning we are just connecting dots rather than fathoming the underlying pattern. 
 
 ```
-<img src="./img/1.png" style="height: 5px;"/>
+<img src="./img/1.png" widht="50"/>
 
 
 
