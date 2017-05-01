@@ -1,6 +1,6 @@
 ## Advanced Data Analysis from Regression to Time Series 
 
-Notice: this note is based on Cosma Shalizi's lecture 36-402 Advanced Data Analysis and all credits should go to [Professor Shalizi](https://en.wikipedia.org/wiki/Cosma_Shalizi). 
+Notice: this note is based on Cosma Shalizi's lecture [36-402 Advanced Data Analysis](https://www.stat.cmu.edu/~cshalizi/uADA/17/) and all credits should go to [Professor Shalizi](https://en.wikipedia.org/wiki/Cosma_Shalizi). 
 
 1. [Linear Regression](#linear-regression)
 
