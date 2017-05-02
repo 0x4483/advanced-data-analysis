@@ -19,6 +19,7 @@ A: sigma square is the variance and it is the "unpredictable, 'statistical' fluc
 Q: What is data smoothing?
 A: Data smoothing is the process of removing random noise so that the underlying pattern can stand out. Sometimes the model we build might be overfitting the data - meaning we are just connecting dots rather than fathoming the underlying pattern. 
 ```
+[Back to Top](#table-of-contents)
 
 ### [Cross Validation](https://www.stat.cmu.edu/~cshalizi/uADA/17/hw/02/hw-02.pdf)
 
