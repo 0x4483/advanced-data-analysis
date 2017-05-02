@@ -17,7 +17,7 @@ Q: What is data smoothing?
 A: Data smoothing is the process of removing random noise so that the underlying pattern can stand out. Sometimes the model we build might be overfitting the data - meaning we are just connecting dots rather than fathoming the underlying pattern. 
 ```
 
-###  [Cross Validation](https://www.stat.cmu.edu/~cshalizi/uADA/17/hw/02/hw-02.pdf)
+### [Cross Validation](https://www.stat.cmu.edu/~cshalizi/uADA/17/hw/02/hw-02.pdf)
 
 Rather than titling it as evaluating statistical model, I am using cross validation because it is the mean technique or term we focus on in this section. However, the intent or reason of studying cross-validation is to test how well our predictions are. One thing to remember about the error is that we want the error to be small or small on average. In addtion, if we observe any systematic error, we should always be able to adjust it such that the error become even smaller. However, blindly seeking for minimizing mean squared error could overfit and often using high polynomial degree is one possible way of overfitting. Going back to our bias-variance tradeoff, although our bias decreases our variance increases and decreasing the predictive power of our model. Therefore, we use __cross validation__ to avoid over-fitting data. This can be achieve in the following way:
 
