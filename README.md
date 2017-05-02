@@ -3,7 +3,7 @@
 Notice: this note is based on Cosma Shalizi's lecture [36-402 Advanced Data Analysis](https://www.stat.cmu.edu/~cshalizi/uADA/17/) and all credits should go to [Professor Shalizi](https://en.wikipedia.org/wiki/Cosma_Shalizi). In addition, some of the quoted sentences and images are taken from his publication [Advanced Data Analysis from an Elementary Point of View](https://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf)
 
 1. [Linear Regression](#linear-regression)
-2. [Cross Validation)(#cross-validation)
+2. [Cross Validation](#cross-validation)
 
 ### [Linear Regression](https://www.stat.cmu.edu/~cshalizi/uADA/17/hw/01/hw-01.pdf)
 
