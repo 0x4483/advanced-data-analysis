@@ -44,10 +44,8 @@ cv.lm <- function(data, formulae, nfolds = 5) {
     }
     return(colMeans(mses))
 }
-
 ```
-
-
+The tuning parameter using k-fold cross-validation is `k` and when `k` equals to the number of observations, we have the so called `leave-one-out` cross-validation algorithm and it is computationally efficient because we only need to fit each model once instead of `k` times. 
 
 
 
